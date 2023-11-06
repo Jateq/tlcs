@@ -1,0 +1,5 @@
+clear all; close all; clc
+%% Code 
+
+[z,p] = tf2zp(1, [1 3 5 80])
+pzmap(p,z)
