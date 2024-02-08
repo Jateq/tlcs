@@ -1,7 +1,7 @@
 clear all; clc; close all;
 
 %Plant tf
-G_p = tf(1,[1 6 5 0]);
+G_p = tf(1.2,[0.36 1.86 2.5 0]);
 
 %% Tuned PID coefficients using Ziegler Nichols second method
 Kp = 18;
