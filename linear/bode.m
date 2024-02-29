@@ -1,4 +1,4 @@
-clear all; close all; clc
+clear; close all; clc
 
 % Define the symbolic variable s
 s = tf('s');
