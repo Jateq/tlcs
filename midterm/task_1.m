@@ -3,10 +3,10 @@ clear; close all; clc;
 numerator = 1;
 denominator = [1 3 2 0]; 
 
-G = tf(numerator, denominator);
+H = tf(numerator, denominator);
+G = feedback(H,1);
 
-
-[A, B, C, D] = tf2ss(numerator, denominator);
+[A, B, C, D] = tf2ss(G);
 
 
 
